@@ -24,6 +24,11 @@
         align-items: center;
         flex-direction: column;
 
+        overflow: hidden;
+
+
+        position: relative;
+
         &__follow-number {
             margin-top: 1rem;
         }
@@ -34,7 +39,53 @@
 
         &__today {
             margin-top: 1.5rem;
+            position: relative;
         }
 
+        &__today.up::before {
+            content: url(/images/icon-up.svg);
+            height: 100%;
+            width: 100%;
+
+            position: absolute;
+            top: -10%;
+            right: 25%;
+        } 
+
+        &__today.down::before {
+            content: url(/images/icon-down.svg);
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: -10%;
+            right: 25%;
+        } 
     }
+
+    &__user::before {
+        content: '';
+        width: 100%;
+        height: 5px;
+        position: absolute;
+        top: 0;
+        z-index: 0;
+    }
+
+    &__user.facebook::before {
+        background-color: var(--facebook);
+    }
+
+    &__user.twitter::before {
+        background-color: var(--twitter);
+    }
+
+    &__user.instagram::before {
+        background: linear-gradient(90deg, rgba(253,196,104,1) 0%, rgba(223,73,150,1) 100%); 
+    }
+
+    &__user.youtube::before {
+        background-color: var(--youtube);
+    }
+
+
 }
