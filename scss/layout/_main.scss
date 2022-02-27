@@ -1,0 +1,40 @@
+/* ==========
+    Main 
+========== */
+
+.main {
+
+    margin-top: 2rem;
+
+    &__user {
+
+        &__flex {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+        }
+
+        background-color: var(--dark-desaturated-blue);
+        padding: 2.25rem 1rem 1.75rem;
+        margin-bottom: 1rem;
+        border-radius: .5rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        &__follow-number {
+            margin-top: 1rem;
+        }
+
+        &__followers {
+            margin-top: -.5rem;
+        }
+
+        &__today {
+            margin-top: 1.5rem;
+        }
+
+    }
+}

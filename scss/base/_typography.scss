@@ -1,0 +1,49 @@
+body {
+    font-family: var(--ff);
+}
+
+.header {
+    
+    &__title {
+        font-size: 1.5rem;
+        color: var(--white);
+    }
+
+    &__followers,
+    &__dm {
+        color: var(--desaturated-blue);
+        font-weight: 700;
+    }
+    
+}
+
+.main {
+
+    &__user {
+
+        &__name {
+            color: var(--desaturated-blue);
+            font-weight: 700;
+            font-size: .85rem;
+        }
+
+        &__follow-number {
+            color: var(--white);
+            font-size: 3.5rem;
+        }
+
+        &__followers {
+            color: var(--desaturated-blue);
+            font-size: .75rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        &__today {
+            color: var(--white);
+            font-size: .75rem;
+            font-weight: 700;
+            opacity: .8;
+        }
+    }
+}
