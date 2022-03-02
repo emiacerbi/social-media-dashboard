@@ -155,6 +155,12 @@ body {
   padding: 2rem 1.5rem;
 }
 
+.container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* ==========
     Header 
 ========== */
@@ -174,6 +180,8 @@ body {
   margin-top: 2rem;
 }
 .main__user {
+  margin: 0 auto;
+  min-width: 255px;
   background-color: var(--dark-desaturated-blue);
   padding: 2.25rem 1rem 1.75rem;
   margin-bottom: 1.5rem;
@@ -237,6 +245,24 @@ body {
   background-color: var(--youtube);
 }
 
+@media (min-width: 600px) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1150px) {
+  .main {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1.5rem;
+  }
+}
 /* ==========
    Overview 
 ========== */
