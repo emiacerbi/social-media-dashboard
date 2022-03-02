@@ -4,7 +4,7 @@
   --facebook: hsl(208, 92%, 53%);
   --twitter: hsl(203, 89%, 53%);
   --youtube: hsl(348, 97%, 39%);
-  --toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+  --toggle: linear gradient #378fe6 to #3eda82;
   --toggle: hsl(230, 22%, 74%);
   --very-dark-blue-bg: hsl(230, 17%, 14%);
   --very-dark-blue: hsl(232, 19%, 15%);
@@ -127,11 +127,27 @@ body {
   font-weight: 700;
   opacity: 0.8;
 }
-.main__user .green {
-  color: var(--green);
+
+.overview__title {
+  color: var(--white);
 }
-.main__user .red {
+.overview__stats__text {
+  color: var(--desaturated-blue);
+  font-weight: 700;
+}
+.overview__stats__num {
+  color: var(--white);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.green {
+  color: var(--green);
+  font-weight: 700;
+}
+
+.red {
   color: var(--red);
+  font-weight: 700;
 }
 
 body {
@@ -160,7 +176,7 @@ body {
 .main__user {
   background-color: var(--dark-desaturated-blue);
   padding: 2.25rem 1rem 1.75rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   border-radius: 0.5rem;
   display: flex;
   justify-content: center;
@@ -221,6 +237,48 @@ body {
   background-color: var(--youtube);
 }
 
+/* ==========
+   Overview 
+========== */
+.overview {
+  margin-top: 3rem;
+}
+.overview__stats {
+  background-color: var(--dark-desaturated-blue);
+  border-radius: 0.5rem;
+  padding: 1.75rem;
+  padding-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: baseline;
+  row-gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+.overview__stats__icon {
+  margin-left: auto;
+  align-self: center;
+}
+.overview__stats__percentage {
+  margin-left: auto;
+  position: relative;
+}
+.overview__stats__percentage.up::before {
+  content: url(/images/icon-up.svg);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -10%;
+  right: 50%;
+}
+.overview__stats__percentage.down::before {
+  content: url(/images/icon-down.svg);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -10%;
+  right: 50%;
+}
+
 /* The switch - the box around the slider */
 .switch {
   position: relative;
@@ -244,7 +302,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background: linear-gradient(90deg, #378fe6 0%, #3eda82 100%);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -256,23 +314,16 @@ body {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
+  background-color: var(--dark-desaturated-blue);
   -webkit-transition: 0.4s;
   transition: 0.4s;
-}
-
-input:checked + .slider {
-  background-color: #2196F3;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
 }
 
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
+  background-color: white;
 }
 
 /* Rounded sliders */

@@ -1,0 +1,50 @@
+/* ==========
+   Overview 
+========== */
+
+.overview {
+    margin-top: 3rem;
+
+    &__stats {
+        background-color: var(--dark-desaturated-blue);
+        border-radius: .5rem;
+        padding: 1.75rem;
+        padding-bottom: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: baseline;
+        row-gap: 1.25rem;
+        margin-top: 1.5rem;
+
+        
+        &__icon {
+            margin-left: auto;
+            align-self: center;
+        }
+        
+        &__percentage {            
+            margin-left: auto;
+            position: relative;
+
+        }
+
+        &__percentage.up::before {
+            content: url(/images/icon-up.svg);
+            height: 100%;
+            width: 100%;
+    
+            position: absolute;
+            top: -10%;
+            right: 50%;
+        } 
+    
+        &__percentage.down::before {
+            content: url(/images/icon-down.svg);
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: -10%;
+            right: 50%;
+        } 
+    }
+}

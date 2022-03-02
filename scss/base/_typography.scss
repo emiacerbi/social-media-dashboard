@@ -46,12 +46,42 @@ body {
             opacity: .8;
         }
 
-        .green {
-            color: var(--green);
-        }
+
+    }
+}
+
+.overview {
+
+    &__title {
+        color: var(--white);
+    }
+
+    &__stats {
         
-        .red {
-            color: var(--red);
+        &__text {
+            color: var(--desaturated-blue);
+            font-weight: 700;
+        }
+
+        &__num {
+            color: var(--white);
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        &__percentage {
+
         }
     }
+
+}
+
+.green {
+    color: var(--green);
+    font-weight: 700;
+}
+
+.red {
+    color: var(--red);
+    font-weight: 700;
 }
