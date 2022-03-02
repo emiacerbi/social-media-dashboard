@@ -6,7 +6,7 @@
     margin-top: 3rem;
 
     &__stats {
-        background-color: var(--dark-desaturated-blue);
+        background-color: var(--light-grayish-blue);
         border-radius: .5rem;
         padding: 1.5rem;
         padding-bottom: 1rem;
@@ -54,7 +54,7 @@
     }
 
     &__stats:hover {
-        background-color: #333a56;
+        background-color: #e1e3f0;
     }
 }
 

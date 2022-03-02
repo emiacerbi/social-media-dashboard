@@ -1,0 +1,98 @@
+body {
+    font-family: var(--ff);
+}
+
+.header {
+    
+    &__title {
+        font-size: 1.5rem;
+        color: var(--very-dark-blue);
+    }
+
+    &__followers,
+    &__dm {
+        color: var(--dark-grayish-blue);
+        font-weight: 700;
+    }
+
+    &__dm {
+        color: grey;
+    }
+}
+
+.main {
+
+    &__user {
+
+        &__name {
+            color: var(--dark-grayish-blue);
+            font-weight: 700;
+            font-size: .85rem;
+        }
+
+        &__follow-number {
+            color: var(--very-dark-blue);
+            font-size: 3.5rem;
+        }
+
+        &__followers {
+            color: var(--dark-grayish-blue);
+            font-size: .75rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        &__today {
+            color: var(--green);
+            font-size: .75rem;
+            font-weight: 700;
+            opacity: .8;
+        }
+    }
+}
+
+.overview {
+
+    &__title {
+        color: var(--very-dark-blue);
+    }
+    
+    &__stats {
+        
+        &__text {
+            color: var(--dark-grayish-blue);
+            font-weight: 700;
+            font-size: .85rem;
+        }
+
+        &__num {
+            color: var(--very-dark-blue);
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        &__percentage {
+            font-size: .75rem;
+        }
+    }
+
+}
+
+.green {
+    color: var(--green);
+    font-weight: 700;
+}
+
+.red {
+    color: var(--red);
+    font-weight: 700;
+}
+
+@media (min-width: 1150px) {
+    .header {
+
+        &__title {
+            font-size: 1.75rem;
+        }
+    }
+}
