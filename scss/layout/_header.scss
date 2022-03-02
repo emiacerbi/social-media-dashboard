@@ -15,3 +15,27 @@
         padding-top: 1.5rem;
     }
 }
+
+@media (min-width: 600px) {
+    .header {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        &__title {
+            width: 18ch;
+        }
+
+        &__flex {
+            border-top: none;
+            justify-content: flex-end;
+            margin: 0;
+            padding: 0;
+
+            .header__dm {
+                margin-right: 1rem;
+            }
+        }
+    }
+
+}

@@ -14,7 +14,10 @@ body {
         color: var(--desaturated-blue);
         font-weight: 700;
     }
-    
+
+    &__dm {
+        color: var(--white);
+    }
 }
 
 .main {
@@ -45,8 +48,6 @@ body {
             font-weight: 700;
             opacity: .8;
         }
-
-
     }
 }
 
@@ -55,22 +56,23 @@ body {
     &__title {
         color: var(--white);
     }
-
+    
     &__stats {
         
         &__text {
             color: var(--desaturated-blue);
             font-weight: 700;
+            font-size: .85rem;
         }
 
         &__num {
             color: var(--white);
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: 700;
         }
 
         &__percentage {
-
+            font-size: .75rem;
         }
     }
 
@@ -84,4 +86,13 @@ body {
 .red {
     color: var(--red);
     font-weight: 700;
+}
+
+@media (min-width: 1150px) {
+    .header {
+
+        &__title {
+            font-size: 1.75rem;
+        }
+    }
 }
