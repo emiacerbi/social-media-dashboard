@@ -14,6 +14,8 @@ Users should be able to:
 
 ### Screenshot
 
+![](./images/screenshot.png)
+
 ### Links
 
 - Live Site URL: [Link](https://emiacerbi.github.io/social-media-dashboard/)
@@ -62,4 +64,4 @@ If darkTheme is true, the switch will change the reference of the CSS file to th
 
 ## Acknowledgments
 
-As always, I appreciate all the awesome challenges that [Frontend Mentor]
+As always, I appreciate all the awesome challenges that [Frontend Mentor] (frontendmentor.io) offers, I learn a lot from them. 
