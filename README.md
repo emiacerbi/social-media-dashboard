@@ -34,7 +34,7 @@ Users should be able to:
 
 ### What I learned
 
-In this project I learned one method to siwtch between light and dark themes. In my case, I changed the reference to the CSS file with the following logic:
+In this project I learned one method to switch between light and dark themes. In my case, I changed the reference to the CSS file with the following logic:
 
 ```JS
 checkBox[0].checked = false // This sets the switch on dark mode by default
