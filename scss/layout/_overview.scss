@@ -29,7 +29,9 @@
         
         &__percentage {            
             margin-left: auto;
-            position: relative;
+            display: flex;
+            align-items: center;
+            gap: .3rem;
 
         }
 
@@ -37,19 +39,14 @@
             content: url(../images/icon-up.svg);
             height: 100%;
             width: 100%;
-    
-            position: absolute;
-            top: -10%;
-            right: 50%;
+            padding-bottom: .25rem;
         } 
     
         &__percentage.down::before {
             content: url(../images/icon-down.svg);
             height: 100%;
             width: 100%;
-            position: absolute;
-            top: -10%;
-            right: 50%;
+            padding-bottom: .25rem;
         } 
     }
 

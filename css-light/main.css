@@ -251,23 +251,18 @@ body {
 }
 .main__user__today {
   margin-top: 1.5rem;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
 }
 .main__user__today.up::before {
-  content: url(/images/icon-up.svg);
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: -10%;
-  right: 25%;
+  content: url(../images/icon-up.svg);
+  padding-bottom: 0.25rem;
 }
 .main__user__today.down::before {
-  content: url(/images/icon-down.svg);
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: -10%;
-  right: 25%;
+  content: url(../images/icon-down.svg);
+  padding-bottom: 0.25rem;
 }
 .main__user:hover {
   background-color: #e1e3f0;
@@ -341,23 +336,17 @@ body {
 }
 .overview__stats__percentage {
   margin-left: auto;
-  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
 }
 .overview__stats__percentage.up::before {
   content: url(../images/icon-up.svg);
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: -10%;
-  right: 50%;
+  padding-bottom: 0.25rem;
 }
 .overview__stats__percentage.down::before {
   content: url(../images/icon-down.svg);
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: -10%;
-  right: 50%;
+  padding-bottom: 0.25rem;
 }
 .overview__stats:hover {
   background-color: #e1e3f0;

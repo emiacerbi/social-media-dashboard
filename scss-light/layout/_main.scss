@@ -41,26 +41,20 @@
 
         &__today {
             margin-top: 1.5rem;
-            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: .3rem;
         }
 
         &__today.up::before {
             content: url(../images/icon-up.svg);
-            height: 100%;
-            width: 100%;
-
-            position: absolute;
-            top: -10%;
-            right: 25%;
+            padding-bottom: .25rem;
         } 
 
         &__today.down::before {
             content: url(../images/icon-down.svg);
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            top: -10%;
-            right: 25%;
+            padding-bottom: .25rem;
         } 
     }
 

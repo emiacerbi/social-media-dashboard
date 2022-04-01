@@ -41,26 +41,20 @@
 
         &__today {
             margin-top: 1.5rem;
-            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .3rem;
         }
 
         &__today.up::before {
             content: url(../images/icon-up.svg);
-            height: 100%;
-            width: 100%;
-
-            position: absolute;
-            top: -10%;
-            right: 25%;
+            padding-bottom: .25rem;
         } 
 
         &__today.down::before {
             content: url(../images/icon-down.svg);
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            top: -10%;
-            right: 25%;
+            padding-bottom: .25rem;
         } 
     }
 
@@ -105,18 +99,12 @@
         margin-right: auto;
         margin-top: 3rem;
         column-gap: 1rem;
-        
-        
-        &__user {
-            // min-width: 255px;
-        }
     }
 }
 
 @media (min-width: 1150px) {
     .main {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-
         max-width: 1100px;
         margin-left: auto;
         margin-right: auto;
