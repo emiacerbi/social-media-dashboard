@@ -64,4 +64,4 @@ If darkTheme is true, the switch will change the reference of the CSS file to th
 
 ## Acknowledgments
 
-As always, I appreciate all the awesome challenges that [Frontend Mentor] (frontendmentor.io) offers, I learn a lot from them. 
+As always, I appreciate all the awesome challenges that [Frontend Mentor](https://www.frontendmentor.io/home) offers, I learn a lot from them. 
